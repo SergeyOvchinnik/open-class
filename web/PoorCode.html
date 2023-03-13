@@ -171,18 +171,16 @@ return out; // return out;
 
 // Big Sergio Comp8860 -> bIG sERGIO cOMP8860
 function casing(s) {
-	let out = "";
+	let result = "";
 	for(let i = 0; i < s.length; i++) {
 		if(s.charAt(i) == s.charAt(i).toUpperCase()) {
-			out = out + s.charAt(i).toLowerCase();
+			result = result + s.charAt(i).toLowerCase();
 		}
-		else
-			if(s.charAt(i) == s.charAt(i).toLowerCase()) 
-				out = out + s.charAt(i).toUpperCase();
-			else
-				out = out + s.charAt(i);
-}
-	return out;
+		else{
+			result = result + s.charAt(i).toUpperCase();
+		}
+	}
+	return result;
 }
 
 function howMany(f, t, k, z) {

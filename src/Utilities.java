@@ -27,7 +27,19 @@ public class Utilities {
 	// Returns the sum of the smallest and largest numbers form an array
 	// E.g. for array [1, 6, 8, 9] it returns 10
 	public static int maxPlusMin(int[] arr) {
-		return 0; // TODO: implement
+	    int max = arr[0];
+	    int min = arr[0];
+
+	    for (int i = 1; i < arr.length; i++) {
+	        if (arr[i] > max) {
+	            max = arr[i];
+	        }
+	        if (arr[i] < min) {
+	            min = arr[i];
+	        }
+	    }
+
+	    return max + min;
 	}
 	
 	// If x is even, returns x/2

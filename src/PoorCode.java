@@ -95,25 +95,27 @@ return indexOfTopEven;}
 		}
 		return false;
 	}
+
+	public static void printLength(double[] arr) {
+		double length = (double) arr.length;
+		System.out.println("Length = " + length);
+	}
 	
 	
 	public static void printStats(double[] arr) {
-		
-		double length = (double) arr.length;
-		
-		System.out.println("Length = " + length);
+		printLength(arr);
 		
 		double sum = 0.0;
 		for(int i = 0; i < arr.length; i++)
 			sum += arr[i];
 		
-		System.out.println("Sum = " + sum);
+		System.out.println("Sum = " + sum); // print the sum
 		
 		double n = (double) arr.length;
 		
 		double mean = sum / n;
 		
-		System.out.println("Mean = " + mean);
+		System.out.println("Mean = " + mean); // print mean
 		
 		double[] sorted = b(arr);
 		
@@ -122,9 +124,9 @@ return indexOfTopEven;}
 		if(sorted.length % 2 == 1)
 			median = sorted[sorted.length/2];
 		else
-			median = (sorted[sorted.length/2 - 1] + sorted[sorted.length/2]) / 2.0;
+			median = (sorted[sorted.length/2 - 1] + sorted[sorted.length/2]) / 2.0; 
 		
-		System.out.println("Median = " + median);
+		System.out.println("Median = " + median); // return the median 
 		
 		double mode = sorted[0];
 		int topOccurrences = 0;
@@ -145,7 +147,7 @@ return indexOfTopEven;}
 			}
 		}
 		
-		System.out.println("Mode = " + mode);
+		System.out.println("Mode = " + mode); // mode
 		
 		double variance = 0.0;
 		

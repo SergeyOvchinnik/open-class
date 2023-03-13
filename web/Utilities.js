@@ -48,6 +48,17 @@ function power(n, e) {
 // Returns true if values a b c d are in ascending order
 // False otherwise
 // E.g. ordered(1, 2, 3, 4) is true but ordered(1, 2, 4, 3) is false
+
 function ordered(a, b, c, d) {
-	return false; // TODO: implement
+
+	if(a < b < c < d){
+		return true
+	} else {
+			return false; // TODO: implement
+
+	}
 }
+
+console.log("inOrder: ", ordered(1, 2, 3, 4))
+
+console.log("notInOrder", ordered(4, 3, 2, 1))

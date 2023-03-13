@@ -33,7 +33,7 @@ public class Utilities {
 	// If x is even, returns x/2
 	// If x is odd, returns 3x+1
 	public static int threeXPlusOne(int x) {
-		return 0; // TODOL implement
+		return 0; // TODO: implement
 	}
 	
 	// Prints the number n to console n times

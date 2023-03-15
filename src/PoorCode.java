@@ -4,7 +4,7 @@ public class PoorCode {
 
 	public static void main(String[] args) {
 		
-		x("Mr", "Sergey", "Ovchinnik");
+		greet("Mr", "Sergey", "Ovchinnik"); // added meaningful name 'greet'
 		
 		System.out.println();
 		
@@ -42,30 +42,36 @@ public class PoorCode {
 	}
 	
 	/*
-	 * Method x
+	 * Method greet
 	 * 
 	 * Takes in three string parameters and prints out the greeting
 	 * 
 	 * First parameter serves as the title, second as the first name and second is the surname
 	 * 
 	 */
-	public static void x(String a, String b, String c) {
+	public static void greet(String a, String b, String c) {
 		System.out.println("Hello, " + a + " " + b + " " + c);
 	}
 	
-public 
-static 
-int   locateTopEven(int[] arr) 
-	  {
-int topEven =   Integer.MIN_VALUE, indexOfTopEven
-= 0;
-  for(int i =0; (   i < arr.length);i  ++){if   (arr[i] % 2 
-    == 0) {
-if(  arr[i] > topEven   )    {{topEven 
-	 	= arr[i];}
-		indexOfTopEven = i;
-				}}}
-return indexOfTopEven;}
+// 1. We first declare a variable topEven and initialize it to the smallest possible integer value.
+// 2. We then declare a variable indexOfTopEven and initialize it to 0.
+// 3. We then iterate through the array.
+// 4. If the current element is even, we check if it is greater than topEven.
+// 5. If it is, we update topEven and indexOfTopEven.
+// 6. We return indexOfTopEven.
+public static int locateTopEven(int[] arr) {
+int topEven = Integer.MIN_VALUE;
+int indexOfTopEven = 0;
+for (int i = 0; i < arr.length; i++) {
+if (arr[i] % 2 == 0) {
+if (arr[i] > topEven) {
+topEven = arr[i];
+indexOfTopEven = i; 
+}
+}
+}
+return indexOfTopEven;
+}
 	
 	
 	public static boolean evaluateConditions(boolean a,boolean b, int c) {
